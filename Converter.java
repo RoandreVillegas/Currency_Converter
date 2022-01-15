@@ -8,13 +8,17 @@ public class Converter extends JFrame{
     private JPanel controlPanel;
     private JPanel panel = new JPanel();
     private JLabel title;
-    private JTextField priceInput1;
-    private JTextField priceInput2;
+    private JTextField priceInput;
+    private JTextField priceOutput;
     private JComboBox<String> typeList1;
     private JComboBox<String> typeList2;
+    private String currencyType1;
+    private String currencyType2;
+    Double price1;
+    Double price2;
     ButtonListener back = new ButtonListener();
     MenuListener ear = new MenuListener();
-    String[] type = {"United States Dollar", "Euro", "Japanese Yen", "Pound Sterling", "Austrailian Dollar", "Canadian Dollar"};
+    String[] type = {"United States Dollar", "Canadian Dollar", "Japanese Yen", "Pound Sterling", "Austrailian Dollar", "Euro"};
     public Converter(){
         super();
         prepareGUI();
@@ -91,29 +95,30 @@ public class Converter extends JFrame{
                     panel.add(typeList2);
 
                     //text fields
-                    priceInput1 = new JTextField(20);
-                    priceInput1.setBounds(100, 200, 150, 25);
-                    panel.add(priceInput1);
+                    priceInput = new JTextField(20);
+                    priceInput.setBounds(100, 200, 150, 25);
+                    priceInput.setText("1");
+                    panel.add(priceInput);
 
-                    priceInput2 = new JTextField(20);
-                    priceInput2.setBounds(300, 200, 150, 25);
-                    panel.add(priceInput2);
+                    priceOutput = new JTextField(20);
+                    priceOutput.setBounds(300, 200, 150, 25);
+                    priceOutput.setEditable(false);
+                    panel.add(priceOutput);
 
-                    /**
-                     * Reset button
-                     */
-                    // JButton reset = new JButton("Reset");
-                    // reset.setBounds(400, 80, 110, 45);
-                    // reset.addActionListener(back);
-                    // panel.add(reset);
+                    if(typeList1.getItemAt(0).equals(type[0])){
+                        typeList2.setSelectedIndex(1);
+                    }
+                    currencyType1 = (String)typeList1.getSelectedItem();
+                    currencyType2 = (String)typeList2.getSelectedItem();
 
-                    /**
-                     * Buy button
-                     */
-                    // JButton buy = new JButton("Buy");
-                    // buy.setBounds(400, 140, 110, 45);
-                    // buy.addActionListener(back);
-                    // panel.add(buy);
+                    price1 = Double.parseDouble(priceInput.getText());
+
+                    if(currencyType1.equals("United States Dollar")){
+                        price2 = price1 * 0.80;
+                    }
+                    priceOutput.setText(String.valueOf(price2));
+
+                    System.out.println(currencyType1 + " " + currencyType2);
 
                     controlPanel.add(panel);
                     add(controlPanel);
