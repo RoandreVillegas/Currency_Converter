@@ -75,7 +75,7 @@ public class Converter extends JFrame{
                     /**
                      * Header for the "buy" panel
                      */
-                    JLabel header = new JLabel("Buying an investment");
+                    JLabel header = new JLabel("Currency Converter");
                     header.setBounds(10, 20, 200, 25);
                     header.setFont(headerFont);
                     panel.add(header);
