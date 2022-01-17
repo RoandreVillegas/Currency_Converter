@@ -1,6 +1,8 @@
 package Currency_Converter;
 
 import javax.swing.*;
+import javax.swing.text.*;
+import javax.swing.event.*;
 import java.awt.*;
 import java.awt.event.*;
 
@@ -16,6 +18,7 @@ public class Converter extends JFrame{
     private String currencyType2;
     Double price1;
     Double price2;
+    Double quantity;
     ButtonListener back = new ButtonListener();
     MenuListener ear = new MenuListener();
     String[] type = {"United States Dollar", "Canadian Dollar", "Japanese Yen", "Pound Sterling", "Austrailian Dollar", "Euro"};
@@ -76,9 +79,6 @@ public class Converter extends JFrame{
                     panel.setLayout(null);
                     panel.setBackground(Color.lightGray);
 
-                    /**
-                     * Header for the "buy" panel
-                     */
                     JLabel header = new JLabel("Currency Converter");
                     header.setBounds(10, 20, 200, 25);
                     header.setFont(headerFont);
@@ -108,6 +108,7 @@ public class Converter extends JFrame{
                     if(typeList1.getItemAt(0).equals(type[0])){
                         typeList2.setSelectedIndex(1);
                     }
+                    
                     currencyType1 = (String)typeList1.getSelectedItem();
                     currencyType2 = (String)typeList2.getSelectedItem();
 
@@ -116,6 +117,22 @@ public class Converter extends JFrame{
                     if(currencyType1.equals("United States Dollar")){
                         price2 = price1 * 0.80;
                     }
+                    priceInput.getDocument().addDocumentListener(new DocumentListener() {
+                        public void changedUpdate(DocumentEvent e) {
+                            update(e);
+                        }
+                        public void removeUpdate(DocumentEvent e) {
+                            update(e);
+                        }
+                        public void insertUpdate(DocumentEvent e) {
+                            update(e);
+                        }
+                        public void update(DocumentEvent e){
+                            price1 = Double.parseDouble(priceInput.getText());
+                            price2 = price1 * 0.80;
+                            priceOutput.setText(String.valueOf(price2));
+                        }
+                    });
                     priceOutput.setText(String.valueOf(price2));
 
                     System.out.println(currencyType1 + " " + currencyType2);
