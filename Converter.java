@@ -1,7 +1,6 @@
 package Currency_Converter;
 
 import javax.swing.*;
-import javax.swing.text.*;
 import javax.swing.event.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -21,7 +20,30 @@ public class Converter extends JFrame{
     Double quantity;
     ButtonListener back = new ButtonListener();
     MenuListener ear = new MenuListener();
-    String[] type = {"United States Dollar", "Canadian Dollar", "Japanese Yen", "Pound Sterling", "Austrailian Dollar", "Euro"};
+    String[] type = {"Afghan Afghani", "Albanian Lek", "Algerian Dinar", "Angolan Kwanza", "Argentine Peso", "Armenian Dram",
+                     "Aruban Florin",  "Australian Dollar", "Azerbaijani Manat", "Bahamas Dollar", "Bahrain Dinar", "Bangladesh Taka",
+                     "Barbados Dollar", "Belarus Ruble", "Belize Dollar", "Bermuda Dollar", "Bhutan Ngultrum", "Bolivia Boliviano",
+                     "Bosnia-Herzegovina Convertible Mark", "Botswana Pula", "Brazil Real", "Brunei Dollar", "Bulgaria Lev", 
+                     "Burundi Franc", "Cambodia Riel", "Canadian Dollar", "Cape Verde Escudo", "Cayman Islands Dollar", "Chile Peso",
+                     "China Yuan Renminbi", "Colombia Peso", "Comorian Franc", "Congolese Franc", "Costa Rica Colon", "Cuban Peso",
+                     "Czech Republic Koruna", "Denmark Krone", "Djibouti Franc", "Dominican Republic Peso", "East Caribbean Dollar",
+                     "Egypt Pound", "El Salvador Colon", "Eritrea Nakfa", "Ethiopia Birr", "Euro", "Fijian Dollar", "Gambia Dalasi",
+                     "Gambia Dalasi", "Georgia Lari", "Ghana Cedi", "Gibraltar Pound", "Guatemala Quetzal", "Guernsey Pound",
+                     "Guinea Franc", "Guyana Dollar", "Haiti Gourde", "Honduras Lempira", "Hong Kong Dollar", "Japan Yen", "Jersey Pound",
+                     "Jordan Dinar", "Kazakhstan Tenge", "Kenya Shilling", "Korea (North) Won", "Korea (South) Won", "Kuwait Dinar",
+                     "Kyrgyzstan Som", "Laos Kip", "Lebanon Pound", "Lesotho Loti", "Liberia Dollar", "Libya Dinar", "Macau Pataca",
+                     "Macedonia Denar", "Madagascar Ariary", "Malawi Kwacha", "Malaysia Ringgit", "Maldives Rufiyaa", "Mauritania Ouguiya",
+                     "Mauritius Rupee", "Mexico Peso", "Moldova Leu", "Mongolia Tughrik", "Mozambique Metical", "Myanmar Kyat", "Namibia Dollar",
+                     "Nepal Rupee", "Netherlands Antilles Guilder", "New Zealand Dollar", "Nicaragua Cordoba", "Nigeria Naira", "Norway Krone",
+                     "Oman Rial", "Pakistan Rupee", "Panama Balboa", "Pupua New Guinea Kina", "Paraguay Guarani", "Peru Sol", "Philippines Peso", 
+                     "Poland Zloty", "Qatar Riyal", "Romania Leu", "Russia Ruble", "Rwanda Franc", "Saint Helena Pound", "Samoa Tala",
+                     "Saudi Riyal", "Seborga Luigino", "Serbia Dinar", "Seychelles Rupee", "Sierra Leone Leone", "Singapore Dollar",
+                     "Solomon Islands Dollar", "Somalia Shilling", "South Africa Rand", "Sri Lanka Rupee", "Sudan Pound", "Suriname Dollar",
+                     "Swaziland Lilangeni", "Sweden Krona", "Switzerland Franc", "Syria Pound", "Taiwan New Dollar", "Tajikistan Somoni",
+                     "Tanzania Shilling", "Thailand Baht" ,"Tonga Pa'anga", "Trinidad and Tobago Dollar", "Tunisia Dinar", "Turkey Lira",
+                     "Turkmenistan Manat", "Tuvalu Dollar", "Uganda Shilling", "Ukraine Hryvnia", "United Arab Emirates Dirham", "United Kingdom Pound",
+                     "United States Dollar", "Uruguay Peso", "Uzbekistan Som", "Vanuatu Vatu", "Venezuela Bolivar", "Viet Nam Dong", "Yemen Rial",
+                     "Zambia Kwacha", "Zimbabwe Dollar"};
     public Converter(){
         super();
         prepareGUI();
@@ -113,10 +135,8 @@ public class Converter extends JFrame{
                     currencyType2 = (String)typeList2.getSelectedItem();
 
                     price1 = Double.parseDouble(priceInput.getText());
+                    priceOutput.setText(String.valueOf(price2));
 
-                    if(currencyType1.equals("United States Dollar")){
-                        price2 = price1 * 0.80;
-                    }
                     priceInput.getDocument().addDocumentListener(new DocumentListener() {
                         public void changedUpdate(DocumentEvent e) {
                             update(e);
@@ -133,7 +153,6 @@ public class Converter extends JFrame{
                             priceOutput.setText(String.valueOf(price2));
                         }
                     });
-                    priceOutput.setText(String.valueOf(price2));
 
                     System.out.println(currencyType1 + " " + currencyType2);
 
