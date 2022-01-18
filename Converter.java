@@ -16,130 +16,148 @@ public class converter extends JFrame{
     private JComboBox<String> typeList2;
     private String currencyType1;
     private String currencyType2;
-    HashMap<String, Double> Brazil = new HashMap<>();
-    HashMap<String, Double> Brunei = new HashMap<>();
-    HashMap<String, Double> Bulgaria = new HashMap<>(); 
-    HashMap<String, Double> Burundi = new HashMap<>();
-    HashMap<String, Double> Cambodia = new HashMap<>();
-    HashMap<String, Double> Canadian = new HashMap<>();
-    HashMap<String, Double> Cape_Verde = new HashMap<>();
-    HashMap<String, Double> Cayman_Islands = new HashMap<>();
-    HashMap<String, Double> Chile = new HashMap<>();
-    HashMap<String, Double> China = new HashMap<>();
-    HashMap<String, Double> Colombia  = new HashMap<>();
-    HashMap<String, Double> Comorian = new HashMap<>();
-    HashMap<String, Double> Congolese = new HashMap<>();
-    HashMap<String, Double> Costa_Rica = new HashMap<>();
-    HashMap<String, Double> Cuba = new HashMap<>();
-    HashMap<String, Double> Czech = new HashMap<>();
-    HashMap<String, Double> Denmark = new HashMap<>();
-    HashMap<String, Double> Djibouti = new HashMap<>();
-    HashMap<String, Double> Dominican = new HashMap<>();
-    HashMap<String, Double> East_Caribbean= new HashMap<>();
-    HashMap<String, Double> Egypt = new HashMap<>();
-    HashMap<String, Double> El_Salvador = new HashMap<>();
-    HashMap<String, Double> Eritrea = new HashMap<>();
-    HashMap<String, Double> Ethiopia = new HashMap<>();
-    HashMap<String, Double> Euro = new HashMap<>();
-    HashMap<String, Double> Fiji = new HashMap<>();
-    HashMap<String, Double> Gambia = new HashMap<>();
-    HashMap<String, Double> Georgia  = new HashMap<>();
-    HashMap<String, Double> Ghana = new HashMap<>();
-    HashMap<String, Double> Gibraltar  = new HashMap<>();
-    HashMap<String, Double> Guatemala = new HashMap<>();
-    HashMap<String, Double> Guernsey = new HashMap<>();
-    HashMap<String, Double> Guinea = new HashMap<>();
-    HashMap<String, Double> Guyana = new HashMap<>();
-    HashMap<String, Double> Haiti = new HashMap<>();
-    HashMap<String, Double> Honduras = new HashMap<>();
-    HashMap<String, Double> Hong_Kong = new HashMap<>();
-    HashMap<String, Double> Japan = new HashMap<>();
-    HashMap<String, Double> Jersey = new HashMap<>();
-    HashMap<String, Double> Jordan = new HashMap<>();
-    HashMap<String, Double> Kazakhstan  = new HashMap<>();
-    HashMap<String, Double> Kenya = new HashMap<>();
-    HashMap<String, Double> Korea_North = new HashMap<>();
-    HashMap<String, Double> Korea_South = new HashMap<>();
-    HashMap<String, Double> Kuwait = new HashMap<>();
-    HashMap<String, Double> Kyrgyzstan = new HashMap<>();
-    HashMap<String, Double> Laos = new HashMap<>();
-    HashMap<String, Double> Lebanon = new HashMap<>();
-    HashMap<String, Double> Lesotho = new HashMap<>();
-    HashMap<String, Double> Liberia = new HashMap<>();
-    HashMap<String, Double> Libya  = new HashMap<>();
-    HashMap<String, Double> Macau = new HashMap<>();
-    HashMap<String, Double> Macedonia = new HashMap<>();
-    HashMap<String, Double> Madagascar = new HashMap<>();
-    HashMap<String, Double> Malawi = new HashMap<>();
-    HashMap<String, Double> Malaysia = new HashMap<>();
-    HashMap<String, Double> Maldives = new HashMap<>();
-    HashMap<String, Double> Mauritania = new HashMap<>();
-    HashMap<String, Double> Mauritius = new HashMap<>();
-    HashMap<String, Double> Mexico = new HashMap<>();
-    HashMap<String, Double> Moldova = new HashMap<>();
-    HashMap<String, Double> Mongolia = new HashMap<>();
-    HashMap<String, Double> Mozambique = new HashMap<>();
-    HashMap<String, Double> Myanmar = new HashMap<>();
-    HashMap<String, Double> Namibia = new HashMap<>();
-    HashMap<String, Double> Nepal = new HashMap<>();
-    HashMap<String, Double> Netherlands = new HashMap<>();
-    HashMap<String, Double> New_Zealand = new HashMap<>();
-    HashMap<String, Double> Nicaragua = new HashMap<>();
-    HashMap<String, Double> Nigeria  = new HashMap<>();
-    HashMap<String, Double> Norway = new HashMap<>();
-    HashMap<String, Double> Omanl = new HashMap<>();
-    HashMap<String, Double> Pakistan  = new HashMap<>();
-    HashMap<String, Double> Panama = new HashMap<>();
-    HashMap<String, Double> Pupua_New_Guinea = new HashMap<>();
-    HashMap<String, Double> Paraguay = new HashMap<>();
-    HashMap<String, Double> Peru = new HashMap<>();
-    HashMap<String, Double> Philippines = new HashMap<>();
-    HashMap<String, Double> Poland = new HashMap<>();
-    HashMap<String, Double> Qatar = new HashMap<>();
-    HashMap<String, Double> Romania = new HashMap<>();
-    HashMap<String, Double> Russia = new HashMap<>();
-    HashMap<String, Double> Rwanda = new HashMap<>();
-    HashMap<String, Double> Saint_Helena  = new HashMap<>();
-    HashMap<String, Double> Samoa = new HashMap<>();
-    HashMap<String, Double> Saudi = new HashMap<>();
-    HashMap<String, Double> Seborga = new HashMap<>();
-    HashMap<String, Double> Serbia = new HashMap<>();
-    HashMap<String, Double> Seychelles = new HashMap<>();
-    HashMap<String, Double> Sierra_Leone = new HashMap<>();
-    HashMap<String, Double> Singapore = new HashMap<>();
-    HashMap<String, Double> Solomon_Islands = new HashMap<>();
-    HashMap<String, Double> Somalia = new HashMap<>();
-    HashMap<String, Double> South_Africa = new HashMap<>();
-    HashMap<String, Double> Sri_Lanka  = new HashMap<>();
-    HashMap<String, Double> Sudan = new HashMap<>();
-    HashMap<String, Double> Suriname = new HashMap<>();
-    HashMap<String, Double> Swaziland = new HashMap<>();
-    HashMap<String, Double> Sweden = new HashMap<>();
-    HashMap<String, Double> Switzerland = new HashMap<>();
-    HashMap<String, Double> Syria = new HashMap<>();
-    HashMap<String, Double> Taiwan = new HashMap<>();
-    HashMap<String, Double> Tajikistan = new HashMap<>();
-    HashMap<String, Double> Tanzania = new HashMap<>();
-    HashMap<String, Double> Thailand = new HashMap<>();
-    HashMap<String, Double> Tonga = new HashMap<>();
-    HashMap<String, Double> Trinidad = new HashMap<>();
-    HashMap<String, Double> Tunisia = new HashMap<>();
-    HashMap<String, Double> Turkey = new HashMap<>();
-    HashMap<String, Double> Turkmenistan = new HashMap<>();
-    HashMap<String, Double> Tuvalu = new HashMap<>();
-    HashMap<String, Double> Uganda = new HashMap<>();
-    HashMap<String, Double> Ukraine = new HashMap<>();
-    HashMap<String, Double> United_Arab_Emirates = new HashMap<>();
-    HashMap<String, Double> United_Kingdom = new HashMap<>();
-    HashMap<String, Double> United_States = new HashMap<>();
-    HashMap<String, Double> Uruguay = new HashMap<>();
-    HashMap<String, Double> Uzbekistan = new HashMap<>();
-    HashMap<String, Double> Vanuatu  = new HashMap<>();
-    HashMap<String, Double> Venezuela = new HashMap<>();
-    HashMap<String, Double> Vietnam = new HashMap<>();
-    HashMap<String, Double> Yemen = new HashMap<>();
-    HashMap<String, Double> Zambia = new HashMap<>();
-    HashMap<String, Double> Zimbabwe = new HashMap<>();
+    HashMap<String, Double> afghan = new HashMap<>();
+    HashMap<String, Double> albania = new HashMap<>();
+    HashMap<String, Double> algeria = new HashMap<>();
+    HashMap<String, Double> argentina = new HashMap<>();
+    HashMap<String, Double> armenia = new HashMap<>();
+    HashMap<String, Double> aruba = new HashMap<>();
+    HashMap<String, Double> australia = new HashMap<>();
+    HashMap<String, Double> azerbaijan = new HashMap<>();
+    HashMap<String, Double> bahamas = new HashMap<>();
+    HashMap<String, Double> bahrain = new HashMap<>();
+    HashMap<String, Double> bangladesh = new HashMap<>();
+    HashMap<String, Double> barbados = new HashMap<>();
+    HashMap<String, Double> belarus = new HashMap<>();
+    HashMap<String, Double> belize = new HashMap<>();
+    HashMap<String, Double> bermuda = new HashMap<>();
+    HashMap<String, Double> bhutan = new HashMap<>();
+    HashMap<String, Double> bolivia = new HashMap<>();
+    HashMap<String, Double> bosnia = new HashMap<>();
+    HashMap<String, Double> botswana = new HashMap<>();
+    HashMap<String, Double> brazil = new HashMap<>();
+    HashMap<String, Double> brunei = new HashMap<>();
+    HashMap<String, Double> bulgaria = new HashMap<>(); 
+    HashMap<String, Double> burundi = new HashMap<>();
+    HashMap<String, Double> cambodia = new HashMap<>();
+    HashMap<String, Double> canadian = new HashMap<>();
+    HashMap<String, Double> cape_verde = new HashMap<>();
+    HashMap<String, Double> cayman_islands = new HashMap<>();
+    HashMap<String, Double> chile = new HashMap<>();
+    HashMap<String, Double> china = new HashMap<>();
+    HashMap<String, Double> colombia  = new HashMap<>();
+    HashMap<String, Double> comorian = new HashMap<>();
+    HashMap<String, Double> congolese = new HashMap<>();
+    HashMap<String, Double> costa_rica = new HashMap<>();
+    HashMap<String, Double> cuba = new HashMap<>();
+    HashMap<String, Double> czech = new HashMap<>();
+    HashMap<String, Double> denmark = new HashMap<>();
+    HashMap<String, Double> djibouti = new HashMap<>();
+    HashMap<String, Double> dominican = new HashMap<>();
+    HashMap<String, Double> east_caribbean= new HashMap<>();
+    HashMap<String, Double> egypt = new HashMap<>();
+    HashMap<String, Double> el_salvador = new HashMap<>();
+    HashMap<String, Double> eritrea = new HashMap<>();
+    HashMap<String, Double> ethiopia = new HashMap<>();
+    HashMap<String, Double> euro = new HashMap<>();
+    HashMap<String, Double> fiji = new HashMap<>();
+    HashMap<String, Double> gambia = new HashMap<>();
+    HashMap<String, Double> georgia  = new HashMap<>();
+    HashMap<String, Double> ghana = new HashMap<>();
+    HashMap<String, Double> guatemala = new HashMap<>();
+    HashMap<String, Double> guernsey = new HashMap<>();
+    HashMap<String, Double> guinea = new HashMap<>();
+    HashMap<String, Double> guyana = new HashMap<>();
+    HashMap<String, Double> haiti = new HashMap<>();
+    HashMap<String, Double> honduras = new HashMap<>();
+    HashMap<String, Double> hong_kong = new HashMap<>();
+    HashMap<String, Double> japan = new HashMap<>();
+    HashMap<String, Double> jersey = new HashMap<>();
+    HashMap<String, Double> jordan = new HashMap<>();
+    HashMap<String, Double> kazakhstan  = new HashMap<>();
+    HashMap<String, Double> kenya = new HashMap<>();
+    HashMap<String, Double> korea_north = new HashMap<>();
+    HashMap<String, Double> korea_south = new HashMap<>();
+    HashMap<String, Double> kuwait = new HashMap<>();
+    HashMap<String, Double> kyrgyzstan = new HashMap<>();
+    HashMap<String, Double> laos = new HashMap<>();
+    HashMap<String, Double> lebanon = new HashMap<>();
+    HashMap<String, Double> lesotho = new HashMap<>();
+    HashMap<String, Double> liberia = new HashMap<>();
+    HashMap<String, Double> libya  = new HashMap<>();
+    HashMap<String, Double> macau = new HashMap<>();
+    HashMap<String, Double> macedonia = new HashMap<>();
+    HashMap<String, Double> madagascar = new HashMap<>();
+    HashMap<String, Double> malawi = new HashMap<>();
+    HashMap<String, Double> malaysia = new HashMap<>();
+    HashMap<String, Double> maldives = new HashMap<>();
+    HashMap<String, Double> mauritania = new HashMap<>();
+    HashMap<String, Double> mauritius = new HashMap<>();
+    HashMap<String, Double> mexico = new HashMap<>();
+    HashMap<String, Double> moldova = new HashMap<>();
+    HashMap<String, Double> mongolia = new HashMap<>();
+    HashMap<String, Double> mozambique = new HashMap<>();
+    HashMap<String, Double> myanmar = new HashMap<>();
+    HashMap<String, Double> namibia = new HashMap<>();
+    HashMap<String, Double> nepal = new HashMap<>();
+    HashMap<String, Double> netherlands = new HashMap<>();
+    HashMap<String, Double> new_zealand = new HashMap<>();
+    HashMap<String, Double> nicaragua = new HashMap<>();
+    HashMap<String, Double> nigeria  = new HashMap<>();
+    HashMap<String, Double> norway = new HashMap<>();
+    HashMap<String, Double> oman = new HashMap<>();
+    HashMap<String, Double> pakistan  = new HashMap<>();
+    HashMap<String, Double> panama = new HashMap<>();
+    HashMap<String, Double> pupua_new_guinea = new HashMap<>();
+    HashMap<String, Double> paraguay = new HashMap<>();
+    HashMap<String, Double> peru = new HashMap<>();
+    HashMap<String, Double> philippines = new HashMap<>();
+    HashMap<String, Double> poland = new HashMap<>();
+    HashMap<String, Double> qatar = new HashMap<>();
+    HashMap<String, Double> romania = new HashMap<>();
+    HashMap<String, Double> russia = new HashMap<>();
+    HashMap<String, Double> rwanda = new HashMap<>();
+    HashMap<String, Double> saint_helena  = new HashMap<>();
+    HashMap<String, Double> samoa = new HashMap<>();
+    HashMap<String, Double> saudi = new HashMap<>();
+    HashMap<String, Double> seborga = new HashMap<>();
+    HashMap<String, Double> serbia = new HashMap<>();
+    HashMap<String, Double> seychelles = new HashMap<>();
+    HashMap<String, Double> sierra_leone = new HashMap<>();
+    HashMap<String, Double> singapore = new HashMap<>();
+    HashMap<String, Double> solomon_islands = new HashMap<>();
+    HashMap<String, Double> somalia = new HashMap<>();
+    HashMap<String, Double> south_africa = new HashMap<>();
+    HashMap<String, Double> sri_lanka  = new HashMap<>();
+    HashMap<String, Double> sudan = new HashMap<>();
+    HashMap<String, Double> suriname = new HashMap<>();
+    HashMap<String, Double> swaziland = new HashMap<>();
+    HashMap<String, Double> sweden = new HashMap<>();
+    HashMap<String, Double> switzerland = new HashMap<>();
+    HashMap<String, Double> syria = new HashMap<>();
+    HashMap<String, Double> taiwan = new HashMap<>();
+    HashMap<String, Double> tajikistan = new HashMap<>();
+    HashMap<String, Double> tanzania = new HashMap<>();
+    HashMap<String, Double> thailand = new HashMap<>();
+    HashMap<String, Double> tonga = new HashMap<>();
+    HashMap<String, Double> trinidad = new HashMap<>();
+    HashMap<String, Double> tunisia = new HashMap<>();
+    HashMap<String, Double> turkey = new HashMap<>();
+    HashMap<String, Double> turkmenistan = new HashMap<>();
+    HashMap<String, Double> tuvalu = new HashMap<>();
+    HashMap<String, Double> uganda = new HashMap<>();
+    HashMap<String, Double> ukraine = new HashMap<>();
+    HashMap<String, Double> united_arab_emirates = new HashMap<>();
+    HashMap<String, Double> united_kingdom = new HashMap<>();
+    HashMap<String, Double> united_states = new HashMap<>();
+    HashMap<String, Double> uruguay = new HashMap<>();
+    HashMap<String, Double> uzbekistan = new HashMap<>();
+    HashMap<String, Double> vanuatu  = new HashMap<>();
+    HashMap<String, Double> venezuela = new HashMap<>();
+    HashMap<String, Double> vietnam = new HashMap<>();
+    HashMap<String, Double> yemen = new HashMap<>();
+    HashMap<String, Double> zambia = new HashMap<>();
+    HashMap<String, Double> zimbabwe = new HashMap<>();
     Double price1;
     Double price2;
     Double quantity;
@@ -153,8 +171,8 @@ public class converter extends JFrame{
                      "China Yuan Renminbi", "Colombia Peso", "Comorian Franc", "Congolese Franc", "Costa Rica Colon", "Cuban Peso",
                      "Czech Republic Koruna", "Denmark Krone", "Djibouti Franc", "Dominican Republic Peso", "East Caribbean Dollar",
                      "Egypt Pound", "El Salvador Colon", "Eritrea Nakfa", "Ethiopia Birr", "Euro", "Fijian Dollar", "Gambia Dalasi",
-                     "Georgia Lari", "Ghana Cedi", "Gibraltar Pound", "Guatemala Quetzal", "Guernsey Pound",
-                     "Guinea Franc", "Guyana Dollar", "Haiti Gourde", "Honduras Lempira", "Hong Kong Dollar", "Japan Yen", "Jersey Pound",
+                     "Georgia Lari", "Ghana Cedi", "Guatemala Quetzal", "Guernsey Pound","Guinea Franc", "Guyana Dollar", "Haiti Gourde", 
+                     "Honduras Lempira", "Hong Kong Dollar", "Indian Rupee", "Japan Yen", "Jersey Pound",
                      "Jordan Dinar", "Kazakhstan Tenge", "Kenya Shilling", "Korea (North) Won", "Korea (South) Won", "Kuwait Dinar",
                      "Kyrgyzstan Som", "Laos Kip", "Lebanon Pound", "Lesotho Loti", "Liberia Dollar", "Libya Dinar", "Macau Pataca",
                      "Macedonia Denar", "Madagascar Ariary", "Malawi Kwacha", "Malaysia Ringgit", "Maldives Rufiyaa", "Mauritania Ouguiya",
@@ -173,436 +191,640 @@ public class converter extends JFrame{
         super();
         prepareGUI();
     }
-    public static void populate_afghan (){
-    
+    public void populate_afghan (){ //popukate afghan hashmap
+        for(int i = 0; i < type.length; i++){
+            if(type[i].equals("Afghan Afghani")){
+                afghan.put(type[i], 1.0);
+            }else if(type[i].equals("Albanian Lek")){
+                afghan.put(type[i], 1.01);
+            }else if(type[i].equals("Algerian Dinar")){
+                afghan.put(type[i], 1.33);
+            }else if(type[i].equals("Angolan Kwanza")){
+                afghan.put(type[i], 5.08);
+            }else if(type[i].equals("Argentine Peso")){
+                afghan.put(type[i], 0.99);
+            }else if(type[i].equals("Armenian Dram")){
+                afghan.put(type[i], 4.56);
+            }else if(type[i].equals("Aruban Florin")){
+                afghan.put(type[i], 0.017);
+            }else if(type[i].equals("Australian Dollar")){
+                afghan.put(type[i], 0.013);
+            }else if(type[i].equals("Azerbaijani Manat")){
+                afghan.put(type[i], 0.016);
+            }else if(type[i].equals("Bahamas Dollar")){
+                afghan.put(type[i], 0.0095);
+            }else if(type[i].equals("Bahrain Dinar")){
+                afghan.put(type[i], 0.0036);
+            }else if(type[i].equals("Bangladesh Taka")){
+                afghan.put(type[i], 0.82);
+            }else if(type[i].equals("Barbados Dollar")){
+                afghan.put(type[i], 0.019);
+            }else if(type[i].equals("Belarus Ruble")){
+                afghan.put(type[i], 0.025);
+            }else if(type[i].equals("Belize Dollar")){
+                afghan.put(type[i], 0.019);
+            }else if(type[i].equals("Bermuda Dollar")){
+                afghan.put(type[i], 0.0095);
+            }else if(type[i].equals("Bhutan Ngultrum")){
+                afghan.put(type[i], 0.71);
+            }else if(type[i].equals("Bolivia Boliviano")){
+                afghan.put(type[i], 0.065);
+            }else if(type[i].equals("Bosnia-Herzegovina Convertible Mark")){
+                afghan.put(type[i], 0.016);
+            }else if(type[i].equals("Botswana Pula")){
+                afghan.put(type[i], 0.11);
+            }else if(type[i].equals("Brazil Real")){
+                afghan.put(type[i], 0.053);
+            }else if(type[i].equals("Brunei Dollar")){
+                afghan.put(type[i], 0.013);
+            }else if(type[i].equals("Bulgaria Lev")){
+                afghan.put(type[i], 0.016);
+            }else if(type[i].equals("Burundi Franc")){
+                afghan.put(type[i], 19.03);
+            }else if(type[i].equals("Cambodia Riel")){
+                afghan.put(type[i], 38.64);
+            }else if(type[i].equals("Canadian Dollar")){
+                afghan.put(type[i], 0.012);
+            }else if(type[i].equals("Cape Verde Escudo")){
+                afghan.put(type[i], 0.92);
+            }else if(type[i].equals("Cayman Island Dollar")){
+                afghan.put(type[i], 0.0079);
+            }else if(type[i].equals("Chile Peso")){
+                afghan.put(type[i], 7.76);
+            }else if(type[i].equals("China Yuan Renminbi")){
+                afghan.put(type[i], 0.060);
+            }else if(type[i].equals("Colombia Peso")){
+                afghan.put(type[i], 38.25);
+            }else if(type[i].equals("Comorian Franc")){
+                afghan.put(type[i], 4.11);
+            }else if(type[i].equals("Congolese Franc")){
+                afghan.put(type[i], 19.01);
+            }else if(type[i].equals("Costa Rica Colon")){
+                afghan.put(type[i], 6.02);
+            }else if(type[i].equals("Cuban Peso")){
+                afghan.put(type[i], 0.23);
+            }else if(type[i].equals("Czech Republic Koruna")){
+                afghan.put(type[i], 0.20);
+            }else if(type[i].equals("Denmark Krone")){
+                afghan.put(type[i], 0.062);
+            }else if(type[i].equals("Djibouti Franc")){
+                afghan.put(type[i], 1.68);
+            }else if(type[i].equals("Dominican Republic Peso")){
+                afghan.put(type[i], 0.55);
+            }else if(type[i].equals("East Caribbean Dollar")){
+                afghan.put(type[i], 0.026);
+            }else if(type[i].equals("Egypt Pound")){
+                afghan.put(type[i], 0.15);
+            }else if(type[i].equals("El Salvador Colon")){
+                afghan.put(type[i], 0.083);
+            }else if(type[i].equals("Eritrea Nakfa")){
+                afghan.put(type[i], 0.14);
+            }else if(type[i].equals("Ethiopia Birr")){
+                afghan.put(type[i], 0.47);
+            }else if(type[i].equals("Euro")){
+                afghan.put(type[i], 0.0084);
+            }else if(type[i].equals("Fijian Dollar")){
+                afghan.put(type[i], 0.02);
+            }else if(type[i].equals("Gambia Dalasi")){
+                afghan.put(type[i], 0.5);
+            }else if(type[i].equals("Georgia Lari")){
+                afghan.put(type[i], 0.029);
+            }else if(type[i].equals("Ghana Cedi")){
+                afghan.put(type[i], 0.059);
+            }else if(type[i].equals("Guatemala Quetzal")){
+                afghan.put(type[i], 0.073);
+            }else if(type[i].equals("Guernsey Pound")){
+                afghan.put(type[i], 0.01);
+            }else if(type[i].equals("Guinea Franc")){
+                afghan.put(type[i], 85.97);
+            }else if(type[i].equals("Guyana Dollar")){
+                afghan.put(type[i], 1.98);
+            }else if(type[i].equals("Haiti Gourde")){
+                afghan.put(type[i], 0.96);
+            }else if(type[i].equals("Honduras Lempira")){
+                afghan.put(type[i], 0.23);
+            }else if(type[i].equals("Hong Kong Dollar")){
+                afghan.put(type[i], 0.074);
+            }else if (type[i].equals("Indian Rupee")){
+                afghan.put(type[i], 0.71);
+            }else if(type[i].equals("Japan Yen")){
+                afghan.put(type[i], 0.96);
+            }else if(type[i].equals("Jersey Pound")){
+            }else if(type[i].equals("Jordan Dinar")){
+            }else if(type[i].equals("Kazakhstan Tenge")){
+            }else if(type[i].equals("Kenya Shilling")){
+            }else if(type[i].equals("Korea (North) Won")){
+            }else if(type[i].equals("Korea (South) Won")){
+            }else if(type[i].equals("Kuwait Dinar")){
+            }else if(type[i].equals("Kyrgyzstan Som")){
+            }else if(type[i].equals("Laos Kip")){
+            }else if(type[i].equals("Lebanon Pound")){
+            }else if(type[i].equals("Lesotho Loti")){
+            }else if(type[i].equals("Liberia Dollar")){
+            }else if(type[i].equals("Libya Dinar")){
+            }else if(type[i].equals("Macau Pataca")){
+            }else if(type[i].equals("Macedonia Denar")){
+            }else if(type[i].equals("Madagascar Ariary")){
+            }else if(type[i].equals("Malawi Kwacha")){
+            }else if(type[i].equals("Malaysia Ringgit")){
+            }else if(type[i].equals("Maldives Rufiyaa")){
+            }else if(type[i].equals("Mauritania Ouguiya")){
+            }else if(type[i].equals("Mauritius Rupee")){
+            }else if(type[i].equals("Mexico Peso")){
+            }else if(type[i].equals("Moldova Leu")){
+            }else if(type[i].equals("Mongolia Tughrik")){
+            }else if(type[i].equals("Mozambique Metical")){
+            }else if(type[i].equals("Myanmar Kyat")){
+            }else if(type[i].equals("Namibia Dollar")){
+            }else if(type[i].equals("Nepal Rupee")){
+            }else if(type[i].equals("Netherlands Antilles Guilder")){
+            }else if(type[i].equals("New Zealand Dollar")){
+            }else if(type[i].equals("Nicaragua Cordoba")){
+            }else if(type[i].equals("Nigeria Naira")){
+            }else if(type[i].equals("Norway Krone")){
+            }else if(type[i].equals("Oman Rial")){
+            }else if(type[i].equals("Pakistan Rupee")){
+            }else if(type[i].equals("Panama Balboa")){
+            }else if(type[i].equals("Pupua New Guinea Kina")){
+            }else if(type[i].equals("Paraguay Guarani")){
+            }else if(type[i].equals("Peru Sol")){
+            }else if(type[i].equals("Philippines Peso")){
+            }else if(type[i].equals("Poland Zloty")){
+            }else if(type[i].equals("Qatar Riyal")){
+            }else if(type[i].equals("Romania Leu")){
+            }else if(type[i].equals("Russia Ruble")){
+            }else if(type[i].equals("Rwanda Franc")){
+            }else if(type[i].equals("Saint Helena Pound")){
+            }else if(type[i].equals("Samoa Tala")){
+            }else if(type[i].equals("Saudi Riyal")){
+            }else if(type[i].equals("Seborga Luigino")){
+            }else if(type[i].equals("Serbia Dinar")){
+            }else if(type[i].equals("Seychelles Rupee")){
+            }else if(type[i].equals("Sierra Leone Leone")){
+            }else if(type[i].equals("Singapore Dollar")){
+            }else if(type[i].equals("Solomon Islands Dollar")){
+            }else if(type[i].equals("Somalia Shilling")){
+            }else if(type[i].equals("South Africa Rand")){
+            }else if(type[i].equals("Sri Lanka Rupee")){
+            }else if(type[i].equals("Sudan Pound")){
+            }else if(type[i].equals("Suriname Dollar")){
+            }else if(type[i].equals("Swaziland Lilangeni")){
+            }else if(type[i].equals("Sweden Krona")){
+            }else if(type[i].equals("Switzerland Franc")){
+            }else if(type[i].equals("Syria Pound")){
+            }else if(type[i].equals("Taiwan New Dollar")){
+            }else if(type[i].equals("Tajikistan Somoni")){
+            }else if(type[i].equals("Tanzania Shilling")){
+            }else if(type[i].equals("Thailand Baht")){
+            }else if(type[i].equals("Tonga Pa'anga")){
+            }else if(type[i].equals("Trinidad and Tobago Dollar")){
+            }else if(type[i].equals("Tunisia Dinar")){
+            }else if(type[i].equals("Turkey Lira")){
+            }else if(type[i].equals("Turkmenistan Manat")){
+            }else if(type[i].equals("Tuvalu Dollar")){
+            }else if(type[i].equals("Uganda Shilling")){
+            }else if(type[i].equals("Ukraine Hryvnia")){
+            }else if(type[i].equals("United Arab Emirates Dirham")){
+            }else if(type[i].equals("United Kingdom Pound")){
+            }else if(type[i].equals("United States Dollar")){
+            }else if(type[i].equals("Uruguay Peso")){
+            }else if(type[i].equals("Uzbekistan Som")){
+            }else if(type[i].equals("Vanuatu Vatu")){
+            }else if(type[i].equals("Venezuela Bolivar")){
+            }else if(type[i].equals("Vietnam Dong")){
+            }else if(type[i].equals("Yemen Rial")){
+            }else if(type[i].equals("Zambia Kwacha")){
+            }else if(type[i].equals("Zimbabwe Dollar")){
+            }
+        }
     }
-    public static void populate_albanian (){
+    public void populate_albanian (){
         
     }
-    public static void populate_algerian (){
+    public void populate_algerian (){
         
     }
-    public static void populate_angolan (){
+    public void populate_angolan (){
         
     }
-    public static void populate_argentine (){
+    public void populate_argentine (){
         
     }
-    public static void populate_armenian (){
+    public void populate_armenian (){
         
     }
-    public static void populate_aruban (){
+    public void populate_aruban (){
         
     }
-    public static void populate_australian (){
+    public void populate_australian (){
         
     }
-    public static void populate_azerbaijani (){
+    public void populate_azerbaijani (){
         
     }
-    public static void populate_bahamas(){
+    public void populate_bahamas(){
         
     }
-    public static void populate_bahrain (){
+    public void populate_bahrain (){
         
     }
-    public static void populate_bangladesh (){
+    public void populate_bangladesh (){
         
     }
-    public static void populate_barbados(){
+    public void populate_barbados(){
         
     }
-    public static void populate_belarus (){
+    public void populate_belarus (){
         
     }
-    public static void populate_belize(){
+    public void populate_belize(){
         
     }
-    public static void populate_bermuda (){
+    public void populate_bermuda (){
         
     }
-    public static void populate_bhutan(){
+    public void populate_bhutan(){
         
     }
-    public static void populate_bolivia(){
+    public void populate_bolivia(){
         
     }
-    public static void populate_bosnia (){
+    public void populate_bosnia (){
         
     }
-    public static void populate_botswana(){
+    public void populate_botswana(){
         
     }
-    public static void populate_brazil(){
+    public void populate_brazil(){
         
     }
-    public static void populate_brunei (){
+    public void populate_brunei (){
         
     }
-    public static void populate_bulgaria(){
+    public void populate_bulgaria(){
         
     }
-    public static void populate_burundi(){
+    public void populate_burundi(){
         
     }
-    public static void populate_cambodia(){
+    public void populate_cambodia(){
         
     }
-    public static void populate_canadian(){
+    public void populate_canadian(){
         
     }
-    public static void populate_cape_verde (){
+    public void populate_cape_verde (){
         
     }
-    public static void populate_cayman_islands(){
+    public void populate_cayman_islands(){
         
     }
-    public static void populate_chile(){
+    public void populate_chile(){
         
     }
-    public static void populate_china (){
+    public void populate_china (){
         
     }
-    public static void populate_colombia (){
+    public void populate_colombia (){
         
     }
-    public static void populate_comorian(){
+    public void populate_comorian(){
         
     }
-    public static void populate_congolese(){
+    public void populate_congolese(){
         
     }
-    public static void populate_costa_rica(){
+    public void populate_costa_rica(){
         
     }
-    public static void populate_cuban (){
+    public void populate_cuban (){
         
     }
-    public static void populate_czech_republic(){
+    public void populate_czech_republic(){
         
     }
-    public static void populate_denmark(){
+    public void populate_denmark(){
         
     }
-    public static void populate_djibouti (){
+    public void populate_djibouti (){
         
     }
-    public static void populate_dominican_republic (){
+    public void populate_dominican_republic (){
         
     }
-    public static void populate_east_caribbean(){
+    public void populate_east_caribbean(){
         
     }
-    public static void populate_egypt (){
+    public void populate_egypt (){
         
     }
-    public static void populate_el_salvador (){
+    public void populate_el_salvador (){
         
     }
-    public static void populate_eritrea(){
+    public void populate_eritrea(){
         
     }
-    public static void populate_ethiopia(){
+    public void populate_ethiopia(){
         
     }
-    public static void populate_euro (){
+    public void populate_euro (){
         
     }
-    public static void populate_fijian (){
+    public void populate_fijian (){
         
     }
-    public static void populate_gambia (){
+    public void populate_gambia (){
         
     }
-    public static void populate_georgia (){
+    public void populate_georgia (){
         
     }
-    public static void populate_ghana (){
+    public void populate_ghana (){
         
     }
-    public static void populate_gibraltar (){
+    public void populate_guatemala(){
         
     }
-    public static void populate_guatemala(){
+    public void populate_guernsey (){
         
     }
-    public static void populate_guernsey (){
+    public void populate_guinea(){
         
     }
-    public static void populate_guinea(){
+    public void populate_guyana (){
         
     }
-    public static void populate_guyana (){
+    public void populate_haiti (){
         
     }
-    public static void populate_haiti (){
+    public void populate_honduras (){
         
     }
-    public static void populate_honduras (){
+    public void populate_hong_kong(){
         
     }
-    public static void populate_hong_kong(){
-        
+    public void populate_india(){
+
     }
-    public static void populate_japan(){
+    public void populate_japan(){
         
     }
-    public static void populate_jersey(){
+    public void populate_jersey(){
         
     }
-    public static void populate_jordan (){
+    public void populate_jordan (){
         
     }
-    public static void populate_kazakhstan(){
+    public void populate_kazakhstan(){
         
     }
-    public static void populate_kenya (){
+    public void populate_kenya (){
         
     }
-    public static void populate_north_korea(){
+    public void populate_north_korea(){
         
     }
-    public static void populate_south_korea(){
+    public void populate_south_korea(){
         
     }
-    public static void populate_kuwait (){
+    public void populate_kuwait (){
         
     }
-    public static void populate_kyrgyzstan (){
+    public void populate_kyrgyzstan (){
         
     }
-    public static void populate_laos(){
+    public void populate_laos(){
         
     }
-    public static void populate_lebanon (){
+    public void populate_lebanon (){
         
     }
-    public static void populate_lesotho(){
+    public void populate_lesotho(){
         
     }
-    public static void populate_liberia (){
+    public void populate_liberia (){
         
     }
-    public static void populate_libya (){
+    public void populate_libya (){
         
     }
-    public static void populate_macau(){
+    public void populate_macau(){
         
     }
-    public static void populate_macedonia(){
+    public void populate_macedonia(){
         
     }
-    public static void populate_madagascar (){
+    public void populate_madagascar (){
         
     }
-    public static void populate_malawi (){
+    public void populate_malawi (){
         
     }
-    public static void populate_malaysia (){
+    public void populate_malaysia (){
         
     }
-    public static void populate_maldives (){
+    public void populate_maldives (){
         
     }
-    public static void populate_mauritania(){
+    public void populate_mauritania(){
         
     }
-    public static void populate_mauritius (){
+    public void populate_mauritius (){
         
     }
-    public static void populate_mexico (){
+    public void populate_mexico (){
         
     }
-    public static void populate_moldova (){
+    public void populate_moldova (){
         
     }
-    public static void populate_mongolia (){
+    public void populate_mongolia (){
         
     }
-    public static void populate_mozambique(){
+    public void populate_mozambique(){
         
     } 
-    public static void populate_myanmar(){
+    public void populate_myanmar(){
         
     }
-    public static void populate_namibia(){
+    public void populate_namibia(){
         
     }
-    public static void populate_nepal (){
+    public void populate_nepal (){
         
     }
-    public static void populate_netherlands (){
+    public void populate_netherlands (){
         
     }
-    public static void populate_new_zealand (){
+    public void populate_new_zealand (){
         
     }
-    public static void populate_nicaragua (){
+    public void populate_nicaragua (){
         
     }
-    public static void populate_nigeria(){
+    public void populate_nigeria(){
         
     }
-    public static void populate_norway(){
+    public void populate_norway(){
         
     }
-    public static void populate_oman(){
+    public void populate_oman(){
         
     }
-    public static void populate_pakistan (){
+    public void populate_pakistan (){
         
     }
-    public static void populate_panama (){
+    public void populate_panama (){
         
     }
-    public static void populate_pupua_new_guinea (){
+    public void populate_pupua_new_guinea (){
         
     }
-    public static void populate_paraguay (){
+    public void populate_paraguay (){
         
     }
-    public static void populate_peru(){
+    public void populate_peru(){
         
     }
-    public static void populate_philippines(){
+    public void populate_philippines(){
         
     }
-    public static void populate_poland (){
+    public void populate_poland (){
         
     }
-    public static void populate_Qatar (){
+    public void populate_Qatar (){
         
     }
-    public static void populate_romania (){
+    public void populate_romania (){
         
     }
-    public static void populate_russia (){
+    public void populate_russia (){
         
     }
-    public static void populate_rwanda(){
+    public void populate_rwanda(){
         
     }
-    public static void populate_saint_helena(){
+    public void populate_saint_helena(){
         
     }
-    public static void populate_samoa (){
+    public void populate_samoa (){
         
     }
-    public static void populate_saudi (){
+    public void populate_saudi (){
         
     }
-    public static void populate_seborga (){
+    public void populate_seborga (){
         
     }
-    public static void populate_serbia(){
+    public void populate_serbia(){
         
     }
-    public static void populate_seychelles (){
+    public void populate_seychelles (){
         
     }
-    public static void populate_sierra_leone (){
+    public void populate_sierra_leone (){
         
     }
-    public static void populate_singapore (){
+    public void populate_singapore (){
         
     }
-    public static void populate_solomon_islands(){
+    public void populate_solomon_islands(){
         
     }
-    public static void populate_somalia (){
+    public void populate_somalia (){
         
     }
-    public static void populate_south_africa(){
+    public void populate_south_africa(){
         
     }
-    public static void populate_sri_lanka(){
+    public void populate_sri_lanka(){
         
     }
-    public static void populate_sudan(){
+    public void populate_sudan(){
         
     }
-    public static void populate_suriname(){
+    public void populate_suriname(){
         
     }
-    public static void populate_swaziland(){
+    public void populate_swaziland(){
         
     }
-    public static void populate_sweden(){
+    public void populate_sweden(){
         
     }
-    public static void populate_switzerland (){
+    public void populate_switzerland (){
         
     }
-    public static void populate_syria(){
+    public void populate_syria(){
         
     }
-    public static void populate_taiwan (){
+    public void populate_taiwan (){
         
     }
-    public static void populate_tajikistan (){
+    public void populate_tajikistan (){
         
     }
-    public static void populate_tanzania (){
+    public void populate_tanzania (){
         
     }
-    public static void populate_thailand (){
+    public void populate_thailand (){
         
     }
-    public static void populate_tonga (){
+    public void populate_tonga (){
         
     }
-    public static void populate_trinidad (){
+    public void populate_trinidad (){
         
     }
-    public static void populate_tunisia (){
+    public void populate_tunisia (){
         
     }
-    public static void populate_turkey (){
+    public void populate_turkey (){
         
     }
-    public static void populate_turkmenistan (){
+    public void populate_turkmenistan (){
         
     }
-    public static void populate_tuvalu (){
+    public void populate_tuvalu (){
         
     }
-    public static void populate_uganda (){
+    public void populate_uganda (){
         
     }
-    public static void populate_ukraine (){
+    public void populate_ukraine (){
         
     }
-    public static void populate_united_arab_emirates (){
+    public void populate_united_arab_emirates (){
         
     }
-    public static void populate_united_kingdom (){
+    public void populate_united_kingdom (){
         
     }
-    public static void populate_united_states (){
+    public void populate_united_states (){
         
     }
-    public static void populate_uruguay(){
+    public void populate_uruguay(){
         
     }
-    public static void populate_uzbekistan (){
+    public void populate_uzbekistan (){
         
     }
-    public static void populate_vanuatu (){
+    public void populate_vanuatu (){
         
     }
-    public static void populate_venezuela (){
+    public void populate_venezuela (){
         
     }
-    public static void populate_vietnam(){
+    public void populate_vietnam(){
         
     }
-    public static void populate_yemen (){
+    public void populate_yemen (){
         
     }
-    public static void populate_zambia(){
+    public void populate_zambia(){
         
     }
-    public static void populate_zimbabwe(){
+    public void populate_zimbabwe(){
         
     }
     
@@ -641,6 +863,8 @@ public class converter extends JFrame{
                     populate_albanian();
                 }else if(type[i].equals("Algerian Dinar")){
                     populate_algerian();
+                }else if(type[i].equals("Angolan Kwanza")){
+                    populate_angolan();
                 }else if(type[i].equals("Argentine Peso")){
                     populate_argentine();
                 }else if(type[i].equals("Armenian Dram")){
@@ -691,6 +915,10 @@ public class converter extends JFrame{
                     populate_cayman_islands();
                 }else if(type[i].equals("Chile Peso")){
                     populate_chile();
+                }else if(type[i].equals("China Yuan Renminbi")){
+                    populate_china();
+                }else if(type[i].equals("Colombia Peso")){
+                    populate_colombia();
                 }else if(type[i].equals("Comorian Franc")){
                     populate_comorian();
                 }else if(type[i].equals("Congolese Franc")){
@@ -727,20 +955,22 @@ public class converter extends JFrame{
                     populate_georgia();
                 }else if(type[i].equals("Ghana Cedi")){
                     populate_ghana();
-                }else if(type[i].equals("Gibraltar Pound")){
-                    populate_gibraltar();
                 }else if(type[i].equals("Guatemala Quetzal")){
                     populate_guatemala();
                 }else if(type[i].equals("Guernsey Pound")){
                     populate_guernsey();
                 }else if(type[i].equals("Guinea Franc")){
                     populate_guinea();
+                }else if(type[i].equals("Guyana Dollar")){
+                    populate_guyana();
                 }else if(type[i].equals("Haiti Gourde")){
                     populate_haiti();
                 }else if(type[i].equals("Honduras Lempira")){
                     populate_honduras();
                 }else if(type[i].equals("Hong Kong Dollar")){
                     populate_hong_kong();
+                }else if(type[i].equals("Indian Rupee")){
+                    populate_india();
                 }else if(type[i].equals("Japan Yen")){
                     populate_japan();
                 }else if(type[i].equals("Jersey Pound")){
@@ -921,6 +1151,7 @@ public class converter extends JFrame{
             Font headerFont = new Font(Font.SERIF, Font.BOLD, 16);
             switch(action){
                 case "Convert between currencies":
+                System.out.println(afghan);
                     panel.setVisible(false);
                     controlPanel.remove(panel);
 
